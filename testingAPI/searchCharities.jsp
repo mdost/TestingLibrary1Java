@@ -26,13 +26,13 @@
 		String keyword = request.getParameter("keyword");
 		String country = request.getParameter("country");
 		String provState = request.getParameter("provState");
-
-		List<SearchCharities> sc = parser.searchCharities(token, pageNum, numPage, charitySize, keyword, charityType, country, provState);
+		out.println(token+pageNum+numPage+charitySize+country);
+		/* List<SearchCharities> sc = parser.searchCharities(token, pageNum, numPage, charitySize, keyword, charityType, country, provState);
 		if(sc != null){
 			for(SearchCharities i: sc){
 				out.println(i.toString()+"<br/>");
 			}
-		}
+		} */
 	}
 	
 	%>

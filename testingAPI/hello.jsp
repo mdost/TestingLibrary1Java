@@ -31,8 +31,8 @@
 		</form>
 		<% 
 			ParseData parser = new ParseData();
-			//String token = parser.getToken("dc669d4e-08ee-4455-a253-ba233be22ba7", "c0440e81-8596-4b3c-af3a-aa73a6eb0e4e");
-			String token = "7c301047-1c32-4914-8cd7-7350d592d3bb";
+			String token = parser.getToken("dc669d4e-08ee-4455-a253-ba233be22ba7", "c0440e81-8596-4b3c-af3a-aa73a6eb0e4e");
+			 token = "7c301047-1c32-4914-8cd7-7350d592d3bb";
 			
 			String button = request.getParameter("enter");
 				
