@@ -1,0 +1,42 @@
+body{
+	background-color: linen;
+	text-align: center;
+}
+h1{
+	text-align: center;
+}
+
+form {
+    text-align: left;
+    margin: 500px;
+    position: relative;
+}
+
+table.table1 {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: white;
+    text-align: center;
+
+    width:300px;
+    height:300px;
+    position: absolute;
+    margin-left:-150px; /* half of width */
+    margin-top:-150px;  /* half of height */
+    top:40%;
+    left:50%;
+}
+
+table.table1 th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    background-color:blanchedalmond
+}
+
+

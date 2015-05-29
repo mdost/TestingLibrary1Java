@@ -8,15 +8,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Donation URL</title>
+<link rel="stylesheet" type="text/css" href="result.css">
 </head>
 <body>
-	<form method="get" action="hello.jsp">
-	<input type="submit" name="back" value="Back" >
+	<form class="button" method="get" action="Home.jsp">
+	<input type="submit" name="back" value="Home" >
 	</form>
 	<h1>Result:</h1>
 	<%
 	ParseData parser = new ParseData();
-	String token = "7c301047-1c32-4914-8cd7-7350d592d3bb";
+	String token = parser.getToken("dc669d4e-08ee-4455-a253-ba233be22ba7", "c0440e81-8596-4b3c-af3a-aa73a6eb0e4e");
+	token = "7c301047-1c32-4914-8cd7-7350d592d3bb";
 	String button = request.getParameter("submit");
 	if(button != null){
 		String isAnonymous = request.getParameter("isAnonymous");
@@ -47,8 +49,12 @@
 			obj.setInHonourOf(request.getParameter("honour"));
 			obj.setInMemorialOf(request.getParameter("memorial"));
 			DonationURL du = parser.getDonationURL(token, obj);
-			out.println(du.getExpires()+"<br/>");
-			out.println(du.getDonationURL()+"<br/>");
+			if(du != null){
+				out.println("Expires: "+du.getExpires()+"<br/>");
+				out.println("Donation URL: "+du.getDonationURL()+"<br/>");
+			}else{
+				out.println("object is null. Please enter required parameters");
+			}
 	}
 	
 	%>

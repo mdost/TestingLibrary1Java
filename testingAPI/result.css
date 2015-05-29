@@ -1,0 +1,79 @@
+p{
+    background-color: linen;
+    text-align: center;
+}
+
+body{
+    background-color: linen;
+}
+
+h1{
+    text-align: center;
+}
+
+form.button {
+    text-align: left;
+    margin: 10px;
+    position: relative;
+}
+
+span.style{
+    color: #FF0000;
+}
+
+form {
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+
+div{
+    position: relative;
+
+}
+
+div.center {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px; /* margin is -0.5 * dimension */
+    margin-top: -150px; 
+}​
+
+table.table1 {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: white;
+    text-align: center;
+
+    width:100px;
+    height:100px;
+    position: absolute;
+    margin-left:-150px; /* half of width */
+    margin-top:-150px;  /* half of height */
+    top:50%;
+    left:15%;
+}
+
+table.table1 th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    background-color:blanchedalmond
+}
+
+ul.bullets {
+    list-style-type: square;
+        
+}
+
+ul.bullets li{
+    list-style-position: inside;        
+}
